@@ -1,0 +1,9 @@
+com\appium\nesine\test\FilterActivityAndAddToBasketTest.class
+com\appium\nesine\cucumber\tests\Runner.class
+com\appium\nesine\cucumber\steps\FootballSelectionSteps.class
+com\appium\nesine\utilities\DriverFactory.class
+com\appium\nesine\utilities\PropReader.class
+com\appium\nesine\BaseTest.class
+com\appium\nesine\ThreadLocalDriver.class
+com\appium\nesine\cucumber\tests\RunCucumberFeatures.class
+com\appium\nesine\cucumber\steps\BaseSteps.class

@@ -1,0 +1,170 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3330561,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FootballSelectionSteps.setupLoginSteps()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Successfully selection of football on main page",
+        "description": "",
+        "id": "football-feature;successfully-selection-of-football-on-main-page",
+        "after": [
+          {
+            "result": {
+              "duration": 23949,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FootballSelectionSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94111861,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have skipped Splash page and I am on the main page",
+            "match": {
+              "location": "FootballSelectionSteps.iHaveSkippedSplashAndTutorialPagesAndIAmOnTheJobSelectionPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12913889524,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click Football button",
+            "match": {
+              "location": "FootballSelectionSteps.iClickİsAriyorumButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1244894145,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see Football page",
+            "match": {
+              "location": "FootballSelectionSteps.iShouldSeeMyProfilePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 588916092,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click filter button",
+            "match": {
+              "location": "FootballSelectionSteps.iClickFilterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3833359491,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click league selection menu",
+            "match": {
+              "location": "FootballSelectionSteps.iClickLeagueSelectionMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 353440575,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I choose first league",
+            "match": {
+              "location": "FootballSelectionSteps.iChooseFirstLeague()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 559975538,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I get activity count from filter page",
+            "match": {
+              "location": "FootballSelectionSteps.iGetActivityCount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 590731052,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click okey button",
+            "match": {
+              "location": "FootballSelectionSteps.iClickOkeyButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 775088791,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I get activity count from bulletin page and I compare counts",
+            "match": {
+              "location": "FootballSelectionSteps.iCompareCounts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3876143170,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I choose rate from bulletin page",
+            "match": {
+              "location": "FootballSelectionSteps.iChooseRateAndClick()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Football Feature",
+    "description": "",
+    "id": "football-feature",
+    "keyword": "Feature",
+    "uri": "src/test/java/com/appium/nesine/cucumber/features/Football.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Football"
+      }
+    ]
+  }
+]

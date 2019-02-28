@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+<suite name="Nesine-Android-Test-Suite" parallel="tests" thread-count="5">
+  
+    <test name="Nexusum" parallel="classes" thread-count="3">
+        <parameter name="deviceName" value="Nexusum" />
+        <parameter name="platformVersion" value="7.1.1" />
+        <classes>
+            <class name="com.appium.nesine.cucumber.tests.RunCucumberFeatures" />
+        </classes>
+    </test>
+ 
+</suite>

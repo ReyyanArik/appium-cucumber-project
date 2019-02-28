@@ -1,0 +1,4 @@
+com\appium\nesine\screens\SplashScreen.class
+com\appium\nesine\screens\BaseScreen.class
+com\appium\nesine\screens\FootballScreen.class
+com\appium\nesine\screens\MainScreen.class
