@@ -11,4 +11,7 @@ Feature: Football Feature
     And I get activity count from filter page
     And I click okey button
     And I get activity count from bulletin page and I compare counts
-    And I choose rate from bulletin page    
+    And I choose rate from bulletin page
+    And I click coupon button on footer bar
+    Then I should see Bet page
+    And I click play now button

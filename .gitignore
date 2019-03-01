@@ -1,8 +1,13 @@
-
-test-output/
+/target/
 
 \.classpath
 
+\.project
+
 \.settings/
 
-\.project
+test-output/old/
+
+test-output/
+
+target/

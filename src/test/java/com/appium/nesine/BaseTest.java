@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.appium.nesine.screens.BaseScreen;
+import com.appium.nesine.screens.BetScreen;
 import com.appium.nesine.screens.BulletinScreen;
 import com.appium.nesine.screens.FilterScreen;
 import com.appium.nesine.screens.FootballScreen;
@@ -35,13 +36,14 @@ public class BaseTest {
     public String hubURL = "http://127.0.0.1:4723/wd/hub";
     public String udid = "emulator-5554";
 
-    protected SplashScreen splashScreen = null;
     protected BaseScreen baseScreen = null;
-    protected MainScreen mainScreen = null;
-    protected FootballScreen footballScreen = null;
-    protected FilterScreen filterScreen = null;
+    protected BetScreen betScreen = null;
     protected BulletinScreen bulletinScreen = null;
-    
+    protected FilterScreen filterScreen = null;
+    protected FootballScreen footballScreen = null;
+    protected MainScreen mainScreen = null;
+    protected SplashScreen splashScreen = null;
+
     @BeforeMethod
     @Parameters({"deviceName", "platformVersion"})
     public void setup (String deviceName, String platformVersion) throws IOException {
@@ -64,12 +66,13 @@ public class BaseTest {
         ThreadLocalDriver.setTLDriver(new AndroidDriver(new URL(hubURL),caps));
         wait = new WebDriverWait(ThreadLocalDriver.getTLDriver(), 10);
 
-        splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());
-        mainScreen = new MainScreen(ThreadLocalDriver.getTLDriver());
         baseScreen = new BaseScreen(ThreadLocalDriver.getTLDriver());
-        footballScreen = new FootballScreen(ThreadLocalDriver.getTLDriver());
-        filterScreen = new FilterScreen(ThreadLocalDriver.getTLDriver());
+        betScreen = new BetScreen(ThreadLocalDriver.getTLDriver());
         bulletinScreen = new BulletinScreen(ThreadLocalDriver.getTLDriver());
+        filterScreen = new FilterScreen(ThreadLocalDriver.getTLDriver());
+        footballScreen = new FootballScreen(ThreadLocalDriver.getTLDriver());
+        mainScreen = new MainScreen(ThreadLocalDriver.getTLDriver());
+        splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());        
     }
 
     @AfterMethod

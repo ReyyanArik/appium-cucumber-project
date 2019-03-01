@@ -8,6 +8,7 @@ import com.appium.nesine.ThreadLocalDriver;
 
 public class BaseSteps {
 	protected BaseScreen baseScreen = null;
+	protected BetScreen betScreen = null;
 	protected BulletinScreen bulletinScreen = null;
 	protected FilterScreen filterScreen = null;
 	protected FootballScreen footballScreen = null;
@@ -21,6 +22,7 @@ public class BaseSteps {
         wait = new WebDriverWait(ThreadLocalDriver.getTLDriver(), 10);
         
         baseScreen = new BaseScreen(ThreadLocalDriver.getTLDriver());
+        betScreen = new BetScreen(ThreadLocalDriver.getTLDriver());
         bulletinScreen = new BulletinScreen(ThreadLocalDriver.getTLDriver());
         filterScreen = new FilterScreen(ThreadLocalDriver.getTLDriver());
         footballScreen = new FootballScreen(ThreadLocalDriver.getTLDriver());

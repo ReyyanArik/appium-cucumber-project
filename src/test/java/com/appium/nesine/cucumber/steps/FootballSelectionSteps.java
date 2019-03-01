@@ -2,6 +2,7 @@ package com.appium.nesine.cucumber.steps;
 
 import com.appium.nesine.ThreadLocalDriver;
 import com.appium.nesine.screens.BaseScreen;
+import com.appium.nesine.screens.BetScreen;
 import com.appium.nesine.screens.BulletinScreen;
 import com.appium.nesine.screens.FilterScreen;
 import com.appium.nesine.screens.FootballScreen;
@@ -19,6 +20,7 @@ import cucumber.api.java.en.When;
 public class FootballSelectionSteps extends BaseSteps {
 
     BaseScreen baseScreen;
+    BetScreen betScreen;
     FootballScreen footballScreen;
     MainScreen mainScreen;
     SplashScreen splashScreen;
@@ -37,6 +39,7 @@ public class FootballSelectionSteps extends BaseSteps {
         splashScreen = new SplashScreen(ThreadLocalDriver.getTLDriver());
         filterScreen = new FilterScreen(ThreadLocalDriver.getTLDriver());
         bulletinScreen = new BulletinScreen(ThreadLocalDriver.getTLDriver());
+        betScreen = new BetScreen(ThreadLocalDriver.getTLDriver());
     }
 
     @Given("^I have skipped Splash page and I am on the main page$")
@@ -90,6 +93,21 @@ public class FootballSelectionSteps extends BaseSteps {
     	bulletinScreen.chooseRate();
     }
     
+    @And("^I click coupon button on footer bar$")
+    public void iClickCouponButton() {
+    	bulletinScreen.clickCouponButton();
+    }
+    
+    @Then("^I should see Bet page$")
+    public void iShouldSeePlayNowButton() {
+    	betScreen.checkPlayNowButton();
+    }
+    
+    @And("^I click play now button$")
+    public void iClickPlayNowButton() {
+    	betScreen.clickPlayNowButton();
+    }
+   
     
     @After
     public synchronized void teardown () {
