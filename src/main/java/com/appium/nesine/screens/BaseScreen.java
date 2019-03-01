@@ -26,6 +26,11 @@ public class BaseScreen {
     protected void waitAndClick (By by) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(by)).click();
     }
+    
+    protected boolean checkElementIsEnabled(By by) {
+       Boolean bool = driver.findElement(by).isEnabled();
+       return bool;
+    }
 
     protected void click(By by) {
         waitVisibility(by);

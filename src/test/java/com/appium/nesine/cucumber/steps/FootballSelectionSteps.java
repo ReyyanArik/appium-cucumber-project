@@ -83,7 +83,7 @@ public class FootballSelectionSteps extends BaseSteps {
     	filterScreen.clickOkeyButton();
     }
     
-    @And("^I get activity count from bulletin page and I compare counts$")
+    @Then("^I get activity count from bulletin page and I compare counts$")
     public void iCompareCounts(){
     	bulletinScreen.getActivityCount(count);
     }
@@ -97,15 +97,15 @@ public class FootballSelectionSteps extends BaseSteps {
     public void iClickCouponButton() {
     	bulletinScreen.clickCouponButton();
     }
-    
-    @Then("^I should see Bet page$")
-    public void iShouldSeePlayNowButton() {
-    	betScreen.checkPlayNowButton();
-    }
-    
+      
     @And("^I click play now button$")
     public void iClickPlayNowButton() {
     	betScreen.clickPlayNowButton();
+    }
+    
+    @Then("^I should see price on price page$")
+    public void iShouldSeePrice() {
+    	
     }
    
     

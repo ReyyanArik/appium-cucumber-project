@@ -9,10 +9,10 @@ public class SplashScreen extends BaseScreen{
         super(driver);
     }
 
-    String animationViewId = "";
+    private By popupCloseButton = By.id("com.pordiva.nesine.android:id/close_btn");
 
     public void skipSplashScreen ()  {
-        //waitAndClick(By.id(animationViewId));
+        waitAndClick(popupCloseButton);
     }
     
     

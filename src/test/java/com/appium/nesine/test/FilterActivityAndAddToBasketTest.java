@@ -17,6 +17,8 @@ public class FilterActivityAndAddToBasketTest extends BaseTest{
 		filterScreen.clickOkeyButton();
 		bulletinScreen.getActivityCount(x);
 		bulletinScreen.chooseRate();
+		bulletinScreen.clickCouponButton();
+		betScreen.clickPlayNowButton();		
 	}
 	
 }
