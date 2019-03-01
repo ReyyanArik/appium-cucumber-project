@@ -8,7 +8,7 @@ public class FilterActivityAndAddToBasketTest extends BaseTest{
 		
 	@Test
 	public void filterActivityAndAddToBasketTest() {
-		//splashScreen.skipSplashScreen();
+		splashScreen.skipSplashScreen();
 		mainScreen.clickFootballMenu();
 		footballScreen.checkAndClickFilterButton();
 		filterScreen.clickLeagueSelectionMenu();
