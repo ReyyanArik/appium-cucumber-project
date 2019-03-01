@@ -15,6 +15,7 @@
     <appium.version>6.0.0-BETA5</appium.version>
     <selenium.version>3.11.0</selenium.version>
     <testng.version>6.14.3</testng.version>
+    <default.testng>TestNG-Cucumber.xml</default.testng>
 </properties>
 
 <dependencies>
@@ -127,7 +128,17 @@
 					</execution>
 				</executions>
 			</plugin>
-
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+				<configuration>
+				<argLine>-Dfile.encoding=UTF-8</argLine>
+					<suiteXmlFiles>
+						<suiteXmlFile>${default.testng}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
         <plugin>
             <groupId>net.masterthought</groupId>
             <artifactId>maven-cucumber-reporting</artifactId>
